@@ -36,16 +36,20 @@ rm ~/projects/task_link
 find ~/ -type f -name "*.log"
 
 # 12. Change the permissions of `todo.txt` to read-only for all users.
+chmod o+r todo.txt
 
+or
+
+chmod 444 todo.txt
 
 # 13. Create a directory structure `work/documents/reports` in a single command.
-
+mkdir -p ~/work/documents/reports
 
 # 14. Find all empty files in the `/tmp` directory.
-
+find /tmp -type f -empty
 
 # 15. Compare the contents of two files, `file1.txt` and `file2.txt`.
-
+diff file1.txt file2.txt
 
 # 16. Search for the word "error" in all `.log` files in the `/var/log` directory.
 
